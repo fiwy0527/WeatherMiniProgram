@@ -1,0 +1,271 @@
+
+.top_city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#4990e2, #87c1f1);
+}
+
+.city_list {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 330rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  padding: 0 30rpx;
+}
+
+.city_item {
+  color: #fff;
+  width: 120px;
+  font-size: 25rpx;
+  padding-top: 5rpx;
+}
+
+.city_item_center {
+  text-align: center;
+  width: 140px;
+  font-size: 30rpx;
+  font-style: bold;
+  padding-top: 0;
+}
+
+/* ------- today --------- */
+
+.today {
+  padding: 50rpx 0 60rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#4990e2, #87c1f1);
+
+}
+
+.today .weather {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+}
+
+.today .weather .pic {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+}
+
+.today .weather .desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+}
+
+.today .weather .desc text {
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.today .temperature {
+  color: #faf9fa;
+  font-size: 70rpx;
+  margin: 30rpx 0;
+  padding-left: 40rpx;
+}
+
+.today .more {
+  color: #faf9fa;
+  font-size: 25rpx;
+  margin-bottom: 20rpx;
+}
+
+.today .more text {
+  padding: 0 10rpx;
+}
+
+.today-bottom {
+  background: #faf9fa;
+  width: 150%;
+  height: 300rpx;
+  border-radius: 150%;
+  margin: -50rpx 0 0 0;
+  margin-left: -25%;
+}
+
+/* ------- feature --------- */
+
+.feature {
+  margin-top: -250rpx;
+}
+
+.feature .day {
+  margin: 20rpx;
+  padding: 20rpx 30rpx;
+  border-radius: 20rpx;
+  background: #fff;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.feature .day .date {
+  width: 80rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-right: 20rpx;
+  padding-top: 5rpx;
+}
+
+.feature .day .pic {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.feature .day .desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx;
+  width: 100px;
+}
+
+.feature .day .desc text {
+  font-size: 20rpx;
+  line-height: 25rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #404040;
+}
+
+.feature .day .temperature {
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-left: 80rpx;
+  padding-top: 5rpx;
+}
+
+
+.date {
+  padding-top: 0rpx;
+  margin-top: 0rpx;
+}
+
+.day-desc {
+  font-size: 25rpx;
+  color: #fff;
+  margin-top: -20rpx;
+}
+
+.day-night {
+  margin: 30rpx 0 50rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.day-night .split {
+  border: none;
+  border-left: 1rpx dashed #eee;
+  height: 80rpx;
+  width: 0rpx;
+  padding: 0;
+  margin: 15rpx 15rpx 0 15rpx;
+}
+
+.today {
+  padding-top: 20rpx;
+}
+
+.today .weather {
+  padding-top: 20rpx;
+  padding-left: 0rpx;
+}
+
+.today .weather .pic {
+  margin: 0 10rpx;
+}
+
+.today .weather .desc {
+  margin: 0 10rpx;
+  float: right;
+  width: 140rpx;
+}
+
+/* life */
+
+.card-list {
+  margin-top: -280rpx;
+}
+
+.card {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #404040;
+}
+
+.card .title {
+  display: block;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 0 100rpx;
+  margin-bottom: 5px;
+  font-size: 30rpx;
+  border-bottom: 1rpx dashed #eee;
+}
+
+.life .item {
+  display: inline-block;
+}
+
+.life .item .line {
+  margin: 10rpx;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(#4990e2, #87c1f1);
+  box-shadow: 0 0 2rpx rgba(0, 0 , 0, 0.6);
+  /* border: 1px solid #49c44a; */
+  color: white;
+  /* background-color: #4990e2; */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 310rpx;
+}
+
+.life .item .pic {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 0 20rpx;
+}
+
+.life .item .name,
+.life .item .desc {
+  font-size: 25rpx;
+  line-height: 48rpx;
+  padding-top: 5rpx;
+}
+.life .item .name{
+  margin-left: 50rpx;
+}
+.life .item .desc {
+  flex: 1;
+}
+/* .life .item .desc text {
+  font-size: 20rpx;
+  line-height: 25rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx;
+  color: #404040;
+} */
+
+.life .item .temperature {
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-left: 80rpx;
+  padding-top: 5rpx;
+  height: 500rpx;
+}

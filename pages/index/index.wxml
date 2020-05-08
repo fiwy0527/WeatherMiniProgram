@@ -1,0 +1,56 @@
+<view class="container">
+	<!-- 头部 -->
+	<view class="top">
+		<view class="title" bindtap="showSettingPage">{{location}}</view>
+		<view class="subtitle">{{updataTime}}</view>
+    <!-- 显示当天温度 -->
+    <view class="visual">
+    <!-- 温度 -->
+      <view class="temperature">
+        <text>{{currentTemperature}} ℃</text>
+      </view>
+      <!-- 温度图标 -->
+      <view class="weatherIcon">
+        <image 
+        src="{{weathericon}}"
+        style="width:{{iconImageHeight}}px;height:{{iconImageHeight}}px"
+        ></image>
+      </view>
+    </view>
+    <!--  loading -->
+    <view class="des" style="font-size:12px">湿度:{{humidity}}  PM2.5: {{pm25}}  {{quality}}</view>
+    <view class="subtitle tips" style="font-size:13px;margin-bottom:10rpx">{{tips}}</view>
+	</view>
+
+	<!-- 天气列表 -->
+	<scroll-view class="list" scroll-y style="height:{{scrollHeight}}rpx">
+		<view class="list" >
+			<view 
+      class="list_item "
+      wx:for="{{furtherWeather}}" wx:key="index"
+      bindtap="showDetailPage"
+      data-index="{{index}}"
+      data-currinformation="{{ item}}"
+      >
+
+        <text>{{item.ymd}} {{item.week}}</text>
+        <!-- 描述 -->
+        <view class="descipt">
+          <view class="left">
+            <!-- 天气图片 -->
+            <image
+              src="{{item.src}}" 
+              ></image>
+          </view>
+          <view class="right">
+            <!-- 风向风力 -->
+            <text style="margin-bottom:5rpx">{{item.type}}</text>
+            <text >{{item.fx}}  {{item.fl}}</text>
+          </view>
+        </view>
+        <!-- 温度区间 -->
+        <text>{{item.low}}~{{item.high}}</text>
+      </view>
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,56 @@
+<!--detail.wxml-->
+<view>
+
+	<scroll-view class="container" scroll-y="true" scroll-with-animation="true">
+		<view class="today">
+			<view class="more date">
+				<text>{{weatherArr.ymd}}，{{weatherArr.week}}</text>
+			</view>
+			<view class="day-night">
+				<view class="weather">
+					<text class="day-desc">白天</text>
+					<image class="pic" src="{{weatherArr.src}}"></image>
+					<view class="desc">
+						<text>最高 {{weatherArr.high}}</text>
+						<text>{{weatherArr.fx}} {{weatherArr.fl}}</text>
+					</view>
+				</view>
+				<view class="weather split"></view>
+				<view class="weather">
+					<view class="desc" style="align-items:flex-end;">
+						<text>最低 {{weatherArr.low}}</text>
+						<text></text>
+					</view>
+					<image class="pic" src="/images/iconfinder_weather_4_2682847.svg"></image>
+					<text class="day-desc">夜间</text>
+				</view>
+			</view>
+			<!-- <view class="temperature">
+        <text>{{weatherInfo.weather[0].info.night[2]}} ~ {{weatherInfo.weather[0].info.day[2]}}°</text>
+      </view> -->
+			<view class="more">
+				<text>日出：{{weatherArr.sunrise}}</text>
+				<text>日落：{{weatherArr.sunset}}</text>
+			</view>
+			<view class="more">
+				<text>{{weatherArr.notice}}</text>
+				<text> </text>
+			</view>
+		</view>
+		<view class="today-bottom"></view>
+		<view class="card-list">
+			<view class="card life">
+				<view class="title">生活指数</view>
+				<view class="item" wx:for="{{suggestion}}" wx:key="index">
+          <view class="line">
+            <!-- <image class="pic" src="{{item.pic}}"></image>	 -->
+            <view class="name">{{item.brief}}：</view>
+            <view class="desc">{{item.details}}</view>
+          </view>
+        </view>
+			</view>
+
+
+		</view>
+	</scroll-view>
+</view>

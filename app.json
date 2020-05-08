@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/setting/setting",
+    "pages/cities/cities"
+  ],
+  "window": {
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#4584d1",
+    "navigationBarTitleText": "云信weather",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
